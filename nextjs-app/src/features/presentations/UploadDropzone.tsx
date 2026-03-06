@@ -57,13 +57,10 @@ export function UploadDropzone() {
     const filePath = `${user.id}/${Date.now()}_${file.name}`
 
     // Supabase Storage 직접 업로드 (클라이언트 → Storage)
+    setProgress(30)
     const { error: uploadError } = await supabase.storage
       .from(STORAGE_BUCKET_PRESENTATIONS)
-      .upload(filePath, file, {
-        onUploadProgress: (e) => {
-          if (e.total) setProgress(Math.round((e.loaded / e.total) * 100))
-        },
-      })
+      .upload(filePath, file)
 
     if (uploadError) {
       setError('파일 업로드에 실패했습니다.')
