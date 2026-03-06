@@ -54,7 +54,11 @@ export function UploadDropzone() {
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) { setError('로그인이 필요합니다.'); setIsUploading(false); return }
 
-    const filePath = `${user.id}/${Date.now()}_${file.name}`
+    const safeFileName = file.name
+      .replace(/\[|\]/g, '')
+      .replace(/\s+/g, '_')
+      .replace(/[^\w\-_.]/g, '')
+    const filePath = `${user.id}/${Date.now()}_${safeFileName}`
 
     // Supabase Storage 직접 업로드 (클라이언트 → Storage)
     setProgress(30)
