@@ -1,0 +1,81 @@
+{
+  "user_presenter": {
+    "id": "u001",
+    "name": "김철수",
+    "role": "presenter",
+    "email": "chulsoo@lab.ac.kr"
+  },
+  "user_reviewer": {
+    "id": "u002",
+    "name": "이영희",
+    "role": "reviewer",
+    "email": "younghee@lab.ac.kr"
+  },
+  "presentations": [
+    {
+      "id": "p001",
+      "title": "딥페이크 탐지 기술 동향 분석",
+      "uploader_name": "김철수",
+      "slide_count": 24,
+      "status": "COMPLETED",
+      "created_at": "2026-03-05T10:30:00Z"
+    },
+    {
+      "id": "p002",
+      "title": "IoT 디바이스 취약점 분석 및 대응",
+      "uploader_name": "박민준",
+      "slide_count": 18,
+      "status": "ANALYZING",
+      "created_at": "2026-03-06T09:00:00Z"
+    },
+    {
+      "id": "p003",
+      "title": "랜섬웨어 행위 기반 탐지 모델",
+      "uploader_name": "최수아",
+      "slide_count": 0,
+      "status": "PENDING",
+      "created_at": "2026-03-06T11:20:00Z"
+    },
+    {
+      "id": "p004",
+      "title": "XSS 공격 패턴 분류 및 방어",
+      "uploader_name": "정다은",
+      "slide_count": 20,
+      "status": "FAILED",
+      "created_at": "2026-03-04T14:00:00Z"
+    }
+  ],
+  "slides": [
+    { "id": "s001", "slide_number": 1, "presentation_id": "p001", "text": "딥페이크 탐지 기술 동향 분석\n정보보호 연구실 발표" },
+    { "id": "s002", "slide_number": 2, "presentation_id": "p001", "text": "목차\n1. 딥페이크 정의\n2. 탐지 기법 분류\n3. 최신 연구 동향\n4. 결론 및 향후 연구" },
+    { "id": "s003", "slide_number": 3, "presentation_id": "p001", "text": "딥페이크란?\nGenerative AI 기반 합성 미디어로 개인의 얼굴, 음성 등을 조작하는 기술" }
+  ],
+  "analysis_results": {
+    "spell": [
+      { "slide": 3, "original": "갭처", "corrected": "캡처", "description": "캡처(capture)의 올바른 표기입니다." },
+      { "slide": 7, "original": "어떻해", "corrected": "어떻게", "description": "부사형 어미 사용 오류입니다." },
+      { "slide": 12, "original": "데이터셋", "corrected": "데이터셋", "description": "외래어 표기는 현재 사용이 맞습니다." }
+    ],
+    "logic": [
+      { "slide": 5, "issue": "딥러닝 모델 성능 비교 기준이 명시되지 않음", "suggestion": "F1-Score, AUC-ROC 등 정량적 지표를 표에 추가하세요.", "severity": "high" },
+      { "slide": 9, "issue": "실험 데이터셋의 출처가 불분명함", "suggestion": "FaceForensics++, DFDC 등 표준 벤치마크 데이터셋 사용 여부를 명시하세요.", "severity": "medium" },
+      { "slide": 15, "issue": "결론이 연구 목표와 직접적으로 연결되지 않음", "suggestion": "도입부에서 제시한 연구 문제에 대한 답을 결론에서 명시적으로 서술하세요.", "severity": "low" }
+    ],
+    "questions": [
+      { "question": "Frequency-domain 분석과 Spatial-domain 분석 중 어느 방식이 고품질 딥페이크에 더 강인한가요?", "category": "방법론", "difficulty": "hard" },
+      { "question": "제안하신 탐지 모델의 False Positive Rate은 어느 정도이며, 오탐이 발생하는 주요 케이스는 무엇인가요?", "category": "실험", "difficulty": "hard" },
+      { "question": "GAN 기반 딥페이크와 Diffusion 기반 딥페이크 탐지 성능에 차이가 있나요?", "category": "방법론", "difficulty": "medium" },
+      { "question": "실시간 영상에 적용하기 위한 연산 복잡도 최적화 방안이 있나요?", "category": "보안", "difficulty": "medium" },
+      { "question": "Cross-dataset 검증 실험 결과가 있다면 일반화 성능을 어떻게 평가하셨나요?", "category": "실험", "difficulty": "hard" }
+    ]
+  },
+  "feedbacks": [
+    { "id": "f001", "slide_id": "s002", "reviewer_name": "이영희", "content": "목차 구성이 논리적이에요. 다만 '딥페이크 현황' 슬라이드를 추가하면 청중 이해에 도움이 될 것 같습니다.", "created_at": "2026-03-05T14:00:00Z" },
+    { "id": "f002", "slide_id": "s003", "reviewer_name": "박민준", "content": "딥페이크 정의를 기술적 측면에서 좀 더 구체화하면 좋겠습니다. GAN, Diffusion 모델 구분도 포함해 주세요.", "created_at": "2026-03-05T15:30:00Z" }
+  ],
+  "notifications": [
+    { "id": "n001", "message": "김철수님이 '딥페이크 탐지 기술 동향 분석' 발표 자료를 업로드했습니다.", "is_read": false, "created_at": "2026-03-05T10:30:00Z" },
+    { "id": "n002", "message": "박민준님이 'IoT 디바이스 취약점 분석 및 대응' 발표 자료를 업로드했습니다.", "is_read": false, "created_at": "2026-03-06T09:00:00Z" },
+    { "id": "n003", "message": "최수아님이 '랜섬웨어 행위 기반 탐지 모델' 발표 자료를 업로드했습니다.", "is_read": true, "created_at": "2026-03-06T11:20:00Z" }
+  ]
+}

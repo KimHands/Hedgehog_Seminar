@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pretendard 폰트 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+
+@layer base {
+  :root {
+    /* ===== Blue/Navy 테마 (Light) ===== */
+    --background: 210 40% 98%;        /* #F8FAFC */
+    --foreground: 222 84% 5%;         /* #0F172A */
+
+    --card: 0 0% 100%;                /* #FFFFFF */
+    --card-foreground: 222 84% 5%;
+
+    --primary: 217 91% 60%;           /* #3B82F6 */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96%;         /* #F1F5F9 */
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;  /* #64748B */
+
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;         /* #EF4444 */
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;            /* #E2E8F0 */
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+
+    --success: 160 84% 39%;           /* #10B981 */
+    --warning: 38 92% 50%;            /* #F59E0B */
+
+    --radius: 0.5rem;
+
+    --font-pretendard: 'Pretendard Variable', Pretendard, sans-serif;
+
+    /* 레이아웃 */
+    --header-height: 64px;
+    --sidebar-width: 240px;
+  }
+
+  .dark {
+    --background: 222 84% 5%;         /* #0F172A */
+    --foreground: 210 40% 98%;        /* #F1F5F9 */
+
+    --card: 217 33% 17%;              /* #1E293B */
+    --card-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;           /* #3B82F6 */
+    --primary-foreground: 222 84% 5%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 26%;            /* #334155 */
+    --input: 217 33% 26%;
+    --ring: 217 91% 60%;
+
+    --success: 160 84% 39%;
+    --warning: 38 92% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+}
+
+/* ===== 커스텀 스크롤바 ===== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--muted-foreground)); }

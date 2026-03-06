@@ -1,0 +1,717 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-03-06T13:05:34.355Z",
+  "activeFeatures": [
+    "nextjs-app",
+    "supabase",
+    "presentations",
+    "[id]",
+    "feedbacks",
+    "notifications",
+    "fastapi-backend",
+    "supabase_service.py",
+    "pptx_service.py",
+    "gemini_service.py",
+    "routes",
+    "__init__.py",
+    "ui",
+    "layout",
+    "auth",
+    "login",
+    "signup",
+    "dashboard",
+    "upload",
+    "analysis",
+    "slides"
+  ],
+  "primaryFeature": "nextjs-app",
+  "features": {
+    "nextjs-app": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:03:47.738Z",
+        "lastUpdated": "2026-03-05T20:18:30.803Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/utils/validate.ts"
+    },
+    "supabase": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:04:15.062Z",
+        "lastUpdated": "2026-03-05T20:04:19.567Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/lib/supabase/client.ts"
+    },
+    "presentations": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:04:32.005Z",
+        "lastUpdated": "2026-03-05T20:23:44.814Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/features/presentations/UploadDropzone.tsx"
+    },
+    "[id]": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:04:41.192Z",
+        "lastUpdated": "2026-03-05T20:24:05.122Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/app/presentations/[id]/page.tsx"
+    },
+    "feedbacks": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:04:47.249Z",
+        "lastUpdated": "2026-03-05T20:19:09.306Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/app/api/feedbacks/route.ts"
+    },
+    "notifications": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:05:01.705Z",
+        "lastUpdated": "2026-03-05T20:16:33.167Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/app/notifications/page.tsx"
+    },
+    "fastapi-backend": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:05:12.714Z",
+        "lastUpdated": "2026-03-06T13:05:34.355Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/fastapi-backend/app/main.py"
+    },
+    "supabase_service.py": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:05:24.366Z",
+        "lastUpdated": "2026-03-05T20:05:24.366Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/fastapi-backend/app/services/supabase_service.py"
+    },
+    "pptx_service.py": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:05:33.827Z",
+        "lastUpdated": "2026-03-05T20:05:33.827Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/fastapi-backend/app/services/pptx_service.py"
+    },
+    "gemini_service.py": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:05:56.000Z",
+        "lastUpdated": "2026-03-05T20:05:56.000Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/fastapi-backend/app/services/gemini_service.py"
+    },
+    "routes": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:06:10.150Z",
+        "lastUpdated": "2026-03-05T20:06:24.514Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/fastapi-backend/app/routes/__init__.py"
+    },
+    "__init__.py": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:06:25.197Z",
+        "lastUpdated": "2026-03-05T20:06:25.197Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/fastapi-backend/app/services/__init__.py"
+    },
+    "ui": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:09:42.355Z",
+        "lastUpdated": "2026-03-05T20:10:17.098Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/components/ui/textarea.tsx"
+    },
+    "layout": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:10:34.680Z",
+        "lastUpdated": "2026-03-05T20:23:58.684Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/components/layout/Header.tsx"
+    },
+    "auth": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:13:09.212Z",
+        "lastUpdated": "2026-03-05T20:13:26.262Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/features/auth/SignupForm.tsx"
+    },
+    "login": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:13:29.672Z",
+        "lastUpdated": "2026-03-05T20:13:29.672Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/app/(auth)/login/page.tsx"
+    },
+    "signup": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:13:33.506Z",
+        "lastUpdated": "2026-03-05T20:13:33.506Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/app/(auth)/signup/page.tsx"
+    },
+    "dashboard": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:14:27.910Z",
+        "lastUpdated": "2026-03-05T20:14:27.910Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/app/dashboard/page.tsx"
+    },
+    "upload": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:14:45.482Z",
+        "lastUpdated": "2026-03-05T20:14:45.482Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/app/upload/page.tsx"
+    },
+    "analysis": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:15:16.496Z",
+        "lastUpdated": "2026-03-05T20:15:16.496Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/features/analysis/AnalysisTabs.tsx"
+    },
+    "slides": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-05T20:15:55.135Z",
+        "lastUpdated": "2026-03-05T20:15:55.135Z"
+      },
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/features/slides/SlideViewer.tsx"
+    }
+  },
+  "pipeline": {
+    "currentPhase": 1,
+    "level": "Dynamic",
+    "phaseHistory": []
+  },
+  "session": {
+    "startedAt": "2026-03-05T19:43:18.975Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-03-06T13:05:34.355Z"
+  },
+  "history": [
+    {
+      "timestamp": "2026-03-05T20:03:47.738Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:03:52.564Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:04:15.062Z",
+      "feature": "supabase",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:04:19.567Z",
+      "feature": "supabase",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:04:32.005Z",
+      "feature": "presentations",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:04:41.192Z",
+      "feature": "[id]",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:04:47.249Z",
+      "feature": "feedbacks",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:04:57.570Z",
+      "feature": "[id]",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:05:01.705Z",
+      "feature": "notifications",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:05:06.974Z",
+      "feature": "[id]",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:05:12.714Z",
+      "feature": "fastapi-backend",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:05:24.366Z",
+      "feature": "supabase_service.py",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:05:33.827Z",
+      "feature": "pptx_service.py",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:05:56.000Z",
+      "feature": "gemini_service.py",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:06:10.150Z",
+      "feature": "routes",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:06:13.749Z",
+      "feature": "fastapi-backend",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:06:21.780Z",
+      "feature": "fastapi-backend",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:06:24.514Z",
+      "feature": "routes",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:06:25.197Z",
+      "feature": "__init__.py",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:06:25.792Z",
+      "feature": "fastapi-backend",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:09:08.399Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:09:31.780Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:09:42.355Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:09:49.232Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:09:57.153Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:10:06.932Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:10:12.385Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:10:17.098Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:10:25.088Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:10:29.790Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:10:34.680Z",
+      "feature": "layout",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:10:44.659Z",
+      "feature": "layout",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:10:53.284Z",
+      "feature": "layout",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:10:57.204Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:12:32.594Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:12:39.704Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:12:57.181Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:13:09.212Z",
+      "feature": "auth",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:13:26.262Z",
+      "feature": "auth",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:13:29.672Z",
+      "feature": "login",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:13:33.506Z",
+      "feature": "signup",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:13:42.352Z",
+      "feature": "presentations",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:14:10.389Z",
+      "feature": "presentations",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:14:27.910Z",
+      "feature": "dashboard",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:14:34.974Z",
+      "feature": "layout",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:14:45.482Z",
+      "feature": "upload",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:15:16.496Z",
+      "feature": "analysis",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:15:35.188Z",
+      "feature": "feedbacks",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:15:55.135Z",
+      "feature": "slides",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:16:11.811Z",
+      "feature": "[id]",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:16:24.033Z",
+      "feature": "notifications",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:16:33.167Z",
+      "feature": "notifications",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:16:41.868Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:17:47.924Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:17:55.141Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:18:16.566Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:18:30.803Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:19:00.421Z",
+      "feature": "presentations",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:19:09.306Z",
+      "feature": "feedbacks",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:19:19.701Z",
+      "feature": "[id]",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:19:26.453Z",
+      "feature": "fastapi-backend",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:23:39.291Z",
+      "feature": "[id]",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:23:44.814Z",
+      "feature": "presentations",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:23:58.684Z",
+      "feature": "layout",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:24:01.764Z",
+      "feature": "[id]",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-05T20:24:05.122Z",
+      "feature": "[id]",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T13:05:34.355Z",
+      "feature": "fastapi-backend",
+      "phase": "do",
+      "action": "updated"
+    }
+  ]
+}
