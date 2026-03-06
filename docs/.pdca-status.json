@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-06T13:05:34.355Z",
+  "lastUpdated": "2026-03-06T14:00:23.667Z",
   "activeFeatures": [
     "nextjs-app",
     "supabase",
@@ -35,9 +35,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-03-05T20:03:47.738Z",
-        "lastUpdated": "2026-03-05T20:18:30.803Z"
+        "lastUpdated": "2026-03-06T14:00:23.667Z"
       },
-      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/utils/validate.ts"
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/app/layout.tsx"
     },
     "supabase": {
       "phase": "do",
@@ -48,9 +48,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-03-05T20:04:15.062Z",
-        "lastUpdated": "2026-03-05T20:04:19.567Z"
+        "lastUpdated": "2026-03-06T13:54:45.314Z"
       },
-      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/lib/supabase/client.ts"
+      "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/lib/supabase/server.ts"
     },
     "presentations": {
       "phase": "do",
@@ -61,7 +61,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-03-05T20:04:32.005Z",
-        "lastUpdated": "2026-03-05T20:23:44.814Z"
+        "lastUpdated": "2026-03-06T13:48:53.274Z"
       },
       "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/features/presentations/UploadDropzone.tsx"
     },
@@ -191,7 +191,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-03-05T20:09:42.355Z",
-        "lastUpdated": "2026-03-05T20:10:17.098Z"
+        "lastUpdated": "2026-03-06T14:00:15.175Z"
       },
       "lastFile": "/Users/kimjonggun/Library/Mobile Documents/com~apple~CloudDocs/01_Personal/07_Project/seminar-feedback-platform/nextjs-app/src/components/ui/textarea.tsx"
     },
@@ -308,7 +308,7 @@
   "session": {
     "startedAt": "2026-03-05T19:43:18.975Z",
     "onboardingCompleted": false,
-    "lastActivity": "2026-03-06T13:05:34.355Z"
+    "lastActivity": "2026-03-06T14:00:23.667Z"
   },
   "history": [
     {
@@ -710,6 +710,90 @@
     {
       "timestamp": "2026-03-06T13:05:34.355Z",
       "feature": "fastapi-backend",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T13:48:53.274Z",
+      "feature": "presentations",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T13:51:49.989Z",
+      "feature": "supabase",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T13:51:53.194Z",
+      "feature": "supabase",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T13:52:00.930Z",
+      "feature": "supabase",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T13:52:04.568Z",
+      "feature": "supabase",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T13:54:45.314Z",
+      "feature": "supabase",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T13:54:52.164Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T14:00:03.250Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T14:00:04.294Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T14:00:14.308Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T14:00:15.175Z",
+      "feature": "ui",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T14:00:16.496Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T14:00:20.374Z",
+      "feature": "nextjs-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-06T14:00:23.667Z",
+      "feature": "nextjs-app",
       "phase": "do",
       "action": "updated"
     }
