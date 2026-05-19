@@ -1,17 +1,26 @@
 # 세미나 피드백 플랫폼 (Seminar Feedback Platform)
 
-> 정보보호 연구실 세미나 발표 자료(PPTX) 자동 분석 및 동료 피드백 서비스
+> 정보보호 연구실 **Hedgehog** 세미나 발표 자료(PPTX)를 Gemini AI로 자동 분석하고, 슬라이드별로 동료 피드백을 받는 내부 전용 웹 플랫폼
 
-[![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-Python-green)](https://fastapi.tiangolo.com)
-[![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E)](https://supabase.com)
-[![Vercel](https://img.shields.io/badge/Vercel-Deployed-black)](https://vercel.com)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js&logoColor=white)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white)](https://supabase.com)
+[![Gemini](https://img.shields.io/badge/Google%20Gemini-4285F4?logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com)
 
 ---
 
 ## 서비스 개요
 
 PPTX 파일을 업로드하면 Gemini AI가 자동으로 분석하고, 연구실 동료들이 슬라이드별 피드백을 남길 수 있는 내부 전용 웹 플랫폼입니다.
+
+| 항목 | 내용 |
+|---|---|
+| 소속 | SCH CSE 정보보호 연구실 Hedgehog |
+| 형태 | 내부 전용 웹 플랫폼 (Next.js + FastAPI + Supabase) |
+| 본인 담당 | 풀스택 (프론트 · AI 분석 백엔드 · DB 스키마 · 배포) |
 
 **주요 기능:**
 - PPTX 업로드 → AI 자동 분석 (맞춤법, 논리성, 예상 질문)
@@ -202,18 +211,30 @@ FastAPI 백엔드는 PPTX 분석 시 아래 작업을 수행합니다:
 
 ## 분석 흐름
 
-```
-[사용자] PPTX 업로드
-    ↓ 클라이언트 → Supabase Storage (직접 업로드)
-[Next.js API] presentations 레코드 생성 (status: PENDING)
-    ↓ fire-and-forget
-[FastAPI/Render] 분석 시작 (status: ANALYZING)
-    ├── python-pptx: 슬라이드 텍스트 추출
-    ├── Pillow: 썸네일 생성 → Storage 저장
-    └── Gemini API × 3: 맞춤법 / 논리성 / 예상 질문
-[Supabase DB] 결과 저장 (status: COMPLETED)
-    ↓ Realtime
-[사용자] 실시간 상태 업데이트 확인
+```mermaid
+flowchart TB
+    User[사용자]
+    Storage[(Supabase Storage)]
+    NextAPI[Next.js API]
+    DB[(Supabase DB)]
+    FastAPI[FastAPI on Render]
+    PPTX[python-pptx<br/>텍스트 추출]
+    PIL[Pillow<br/>썸네일 생성]
+    Gemini[Gemini API × 3<br/>맞춤법 · 논리성 · 예상 질문]
+    Realtime[Supabase Realtime]
+
+    User -->|PPTX 업로드| Storage
+    User -->|레코드 생성 요청| NextAPI
+    NextAPI -->|status: PENDING| DB
+    NextAPI -.->|fire-and-forget| FastAPI
+    FastAPI -->|status: ANALYZING| DB
+    FastAPI --> PPTX
+    FastAPI --> PIL
+    FastAPI --> Gemini
+    PIL --> Storage
+    Gemini -->|결과| DB
+    DB -->|status: COMPLETED| Realtime
+    Realtime -->|실시간 알림| User
 ```
 
 ---
